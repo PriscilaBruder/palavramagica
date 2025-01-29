@@ -7,21 +7,23 @@
     <style>
         body {
             background-color: black;
-            color: white;
-            font-family: Arial, sans-serif;
-            text-align: center;
-            margin: 0;
-            padding: 0;
-        }
-        iframe {
-            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             height: 100vh;
-            border: none;
+            margin: 0;
+            color: white;
+        }
+        video {
+            max-width: 80%;
+            height: auto;
         }
     </style>
 </head>
 <body>
-    <h1>Assista ao vídeo "Palavra Mágica"!</h1>
-    <iframe src="https://www.youtube.com/embed/6LWdbqpXdxY" allowfullscreen></iframe>
+    <video controls>
+        <source src="palavramagica.mp4" type="video/mp4">
+        Seu navegador não suporta vídeo HTML5.
+    </video>
 </body>
 </html>
